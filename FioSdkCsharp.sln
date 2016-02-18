@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioSdkCsharp", "Src\FioSdkCsharp\FioSdkCsharp.csproj", "{EED8B91E-106F-4FC7-8548-65AC9198E11E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{84E48F08-B070-4BA9-BE9D-179F72333437}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet\nuget.exe = NuGet\nuget.exe
+		NuGet\pack.bat = NuGet\pack.bat
+		NuGet\package.nuspec = NuGet\package.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{36737FA5-1628-4A96-89A7-54822A653C9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{A0B4478F-7EAE-41F2-BC8C-EDCE77658139}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A3D7C357-0D68-4590-8A11-110204C2B993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioSampleConsoleApp", "Samples\FioSampleConsoleApp\FioSampleConsoleApp.csproj", "{201D671B-281A-4570-A0FF-2E4B2E295883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioSdkCsharp.Net451", "Src\FioSdkCsharp.Net451\FioSdkCsharp.Net451.csproj", "{E5795B86-F1C0-4A65-86BA-2ACD95BFF5A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B5161BFC-6D0D-4396-A2D0-F0CB49CF6DD9}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioSdkCsharp.Net452", "Src\FioSdkCsharp.Net452\FioSdkCsharp.Net452.csproj", "{5D5A008B-7AFB-45CF-899D-D1E21E6AD5E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioSdkCsharp.Net46", "Src\FioSdkCsharp.Net46\FioSdkCsharp.Net46.csproj", "{F96101A9-970C-4DF4-9312-6A306D3493CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EED8B91E-106F-4FC7-8548-65AC9198E11E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED8B91E-106F-4FC7-8548-65AC9198E11E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EED8B91E-106F-4FC7-8548-65AC9198E11E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED8B91E-106F-4FC7-8548-65AC9198E11E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201D671B-281A-4570-A0FF-2E4B2E295883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201D671B-281A-4570-A0FF-2E4B2E295883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201D671B-281A-4570-A0FF-2E4B2E295883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201D671B-281A-4570-A0FF-2E4B2E295883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5795B86-F1C0-4A65-86BA-2ACD95BFF5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5795B86-F1C0-4A65-86BA-2ACD95BFF5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5795B86-F1C0-4A65-86BA-2ACD95BFF5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5795B86-F1C0-4A65-86BA-2ACD95BFF5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D5A008B-7AFB-45CF-899D-D1E21E6AD5E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D5A008B-7AFB-45CF-899D-D1E21E6AD5E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D5A008B-7AFB-45CF-899D-D1E21E6AD5E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D5A008B-7AFB-45CF-899D-D1E21E6AD5E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96101A9-970C-4DF4-9312-6A306D3493CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96101A9-970C-4DF4-9312-6A306D3493CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96101A9-970C-4DF4-9312-6A306D3493CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96101A9-970C-4DF4-9312-6A306D3493CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EED8B91E-106F-4FC7-8548-65AC9198E11E} = {A0B4478F-7EAE-41F2-BC8C-EDCE77658139}
+		{201D671B-281A-4570-A0FF-2E4B2E295883} = {36737FA5-1628-4A96-89A7-54822A653C9B}
+		{E5795B86-F1C0-4A65-86BA-2ACD95BFF5A5} = {A0B4478F-7EAE-41F2-BC8C-EDCE77658139}
+		{5D5A008B-7AFB-45CF-899D-D1E21E6AD5E8} = {A0B4478F-7EAE-41F2-BC8C-EDCE77658139}
+		{F96101A9-970C-4DF4-9312-6A306D3493CF} = {A0B4478F-7EAE-41F2-BC8C-EDCE77658139}
+	EndGlobalSection
+EndGlobal
