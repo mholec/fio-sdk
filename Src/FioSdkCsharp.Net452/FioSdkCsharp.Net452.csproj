@@ -49,6 +49,9 @@
     <Compile Include="..\FioSdkCsharp\ApiExplorer.cs">
       <Link>ApiExplorer.cs</Link>
     </Compile>
+    <Compile Include="..\FioSdkCsharp\Constants.cs">
+      <Link>Constants.cs</Link>
+    </Compile>
     <Compile Include="..\FioSdkCsharp\FioUrl.cs">
       <Link>FioUrl.cs</Link>
     </Compile>

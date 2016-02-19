@@ -3,7 +3,7 @@
   <metadata>
     <id>FioSdk</id>
     <title>SDK for FIO Api</title>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <authors>Miroslav Holec</authors>
     <owners>Miroslav Holec</owners>
     <summary>The SDK works with fio API service</summary>

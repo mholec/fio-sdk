@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiExplorer.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Format.cs" />
     <Compile Include="FioUrl.cs" />
     <Compile Include="Models\AccountStatement.cs" />

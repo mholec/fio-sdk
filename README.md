@@ -22,7 +22,7 @@ Once you have your token, you can use SDK and get information about your stateme
     ApiExplorer explorer = new ApiExplorer("YOUR_TOKEN_MUST_BE_PRESENT_HERE");
 
     // get account statement
-    AccountStatement statement = explorer.Account(TransactionFilter.LastMonth());
+    AccountStatement statement = explorer.Periods(TransactionFilter.LastMonth());
 
     // browse transactions
     foreach (var transaction in statement.TransactionList.Transactions)
@@ -32,18 +32,25 @@ Once you have your token, you can use SDK and get information about your stateme
 
 #### Example - Choose period
 
-	var statement = explorer.Account(TransactionFilter.LastDay());
-	var statement = explorer.Account(TransactionFilter.LastMonth());
+	var statement = explorer.Periods(TransactionFilter.LastDay());
+	var statement = explorer.Periods(TransactionFilter.LastMonth());
 
 #### Example - Choose exact period
-	var statement = explorer.Account(TransactionFilter.LastDays(14));
-	var statement = explorer.Account(TransactionFilter.LastWeeks(8));
+	var statement = explorer.Periods(TransactionFilter.LastDays(14));
+	var statement = explorer.Periods(TransactionFilter.LastWeeks(8));
 
 #### Example - Get data in specific format
 
-    string html = explorer.Account(TransactionFilter.LastDays(10), Format.Html);
-	string xml = explorer.Account(TransactionFilter.LastDays(10), Format.Xml);
-	string csv = explorer.Account(TransactionFilter.LastDays(10), Format.Csv);
+    string html = explorer.Periods(TransactionFilter.LastDays(10), Format.Html);
+	string xml = explorer.Periods(TransactionFilter.LastDays(10), Format.Xml);
+	string csv = explorer.Periods(TransactionFilter.LastDays(10), Format.Csv);
+
+#### Example - Get new transactions from last download
+	var statement = explorer.Last();
+
+You can change last download date also:
+
+	explorer.SetLastDownloadDate(DateTime.UtcNow.AddMonths(-1));
 
 ## Supported frameworks
 

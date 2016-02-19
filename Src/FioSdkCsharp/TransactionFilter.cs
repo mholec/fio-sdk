@@ -15,12 +15,12 @@ namespace FioSdkCsharp
 
         public string DateFrom
         {
-            get { return _from.ToString("yyyy-MM-yy"); }
+            get { return _from.ToString(Constants.DateFormat); }
         }
 
         public string DateTo
         {
-            get { return _to.ToString("yyyy-MM-yy"); }
+            get { return _to.ToString(Constants.DateFormat); }
         }
 
 

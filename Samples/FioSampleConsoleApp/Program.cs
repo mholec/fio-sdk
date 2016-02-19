@@ -10,8 +10,14 @@ namespace FioSampleConsoleApp
         {
             ApiExplorer explorer = new ApiExplorer("YOUR_TOKEN_MUST_BE_PRESENT_HERE");
 
+            // get new transactions from last check
+            AccountStatement newTransactions = explorer.Last();
+
+            // change last check date
+            explorer.SetLastDownloadDate(DateTime.UtcNow.AddMonths(-1));
+
             // get account statement
-            AccountStatement statement = explorer.Account(TransactionFilter.LastMonth());
+            AccountStatement statement = explorer.Periods(TransactionFilter.LastMonth());
 
             // browse transactions
             foreach (var transaction in statement.TransactionList.Transactions)
@@ -20,8 +26,7 @@ namespace FioSampleConsoleApp
             }
 
             // get data in specific format
-            // !!! be aware of attacking fio endpoint, you can call their API again after 30 seconds
-            string data = explorer.Account(TransactionFilter.LastDays(10), Format.Html);
+            string data = explorer.Periods(TransactionFilter.LastDays(10), Format.Html);
         }
     }
 }
