@@ -1,4 +1,4 @@
-# FIO Banka SDK for Csharp
+# FIO Banka SDK for C#
 **The SDK works with fio API service**. At the present time you can get your bank statement in various data format.
 
 ## Nuget
