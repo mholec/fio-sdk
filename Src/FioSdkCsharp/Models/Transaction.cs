@@ -12,7 +12,7 @@ namespace FioSdkCsharp.Models
         public Column<DateTime> Date { get; set; }
 
         [JsonProperty(PropertyName = "column1")]
-        public Column<double> Amount { get; set; }
+        public Column<decimal> Amount { get; set; }
 
         [JsonProperty(PropertyName = "column14")]
         public Column<string> Currency { get; set; }
