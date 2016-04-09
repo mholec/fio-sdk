@@ -37,10 +37,10 @@ namespace FioSdkCsharp.Models
         [JsonProperty(PropertyName = "idList")]
         public object IdList { get; set; }
 
-        [JsonProperty(PropertyName = "idFrom")]
+        [JsonProperty(PropertyName = "idFrom", NullValueHandling = NullValueHandling.Ignore)]
         public long IdFrom { get; set; }
 
-        [JsonProperty(PropertyName = "idTo")]
+        [JsonProperty(PropertyName = "idTo", NullValueHandling = NullValueHandling.Ignore)]
         public long IdTo { get; set; }
 
         [JsonProperty(PropertyName = "idLastDownload")]
