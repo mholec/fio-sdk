@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
+﻿using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using FioSdkCsharp;
 using FioSdkCsharp.Models;
 using System.Diagnostics;
@@ -15,7 +14,7 @@ namespace FioWUPUnitTests
             ApiExplorer explorer = new ApiExplorer("YOUR_TOKEN_MUST_BE_PRESENT_HERE");
 
             // get new transactions from last check
-            AccountStatement newTransactions = explorer.Last().Result;
+            AccountStatement newTransactions = explorer.LastAsync().Result;
 
             // browse transactions
             foreach (var transaction in newTransactions.TransactionList.Transactions)

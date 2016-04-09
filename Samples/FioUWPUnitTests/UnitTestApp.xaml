@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="FioWUPUnitTests.App"
+    x:Class="FioUWPUnitTests.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:FioWUPUnitTests"
+    xmlns:local="using:FioUWPUnitTests"
     RequestedTheme="Light">
 
 </Application>
