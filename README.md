@@ -58,3 +58,4 @@ You can change last download date also:
 - .NET 4.5.1
 - .NET 4.5.2
 - .NET 4.6
+- Universal Windows Platform
