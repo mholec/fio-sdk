@@ -3,7 +3,7 @@
   <metadata>
     <id>FioSdk</id>
     <title>FIO Banka SDK for C#</title>
-    <version>1.0.0.6</version>
+    <version>1.1.0.0</version>
     <authors>Miroslav Holec</authors>
     <owners>Miroslav Holec</owners>
     <summary>FIO Banka SDK for C#</summary>
@@ -20,7 +20,7 @@
     <iconUrl>https://holecdrive.blob.core.windows.net/nuget/fio-sdk.png</iconUrl>
     <tags>fio, sdk, api</tags>
     <releaseNotes><![CDATA[
-            For full release notes see 
+            For full release notes see https://github.com/mholec/fio-sdk-csharp
             ]]></releaseNotes>
   </metadata>
 </package>
