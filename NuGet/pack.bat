@@ -1,5 +1,5 @@
 REM rebuild solution
-msbuild.exe %~dp0\..\FioSdkCsharp.sln /p:Configuration=Release 
+REM msbuild.exe %~dp0\..\FioSdkCsharp.sln /p:Configuration=Release 
 
 REM delete old packages
 rd package
@@ -21,7 +21,7 @@ copy %~dp0\..\Src\FioSdkCsharp.Net46\bin\Release\FioSdkCsharp.dll package\lib\ne
 copy %~dp0\..\Src\FioSdkCsharp.Uap100\bin\Release\FioSdkCsharp.dll package\lib\uap10.0
 
 REM update nuget
-nuget.exe update -self
+REM nuget.exe update -self
 
 REM create package
-nuget.exe pack package.nuspec -BasePath package -Output build
+REM nuget.exe pack package.nuspec -BasePath package -Output build
