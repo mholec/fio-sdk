@@ -8,7 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{84E48F08-B070-4BA9-BE9D-179F72333437}"
 	ProjectSection(SolutionItems) = preProject
 		NuGet\nuget.exe = NuGet\nuget.exe
-		NuGet\pack.bat = NuGet\pack.bat
+		NuGet\pack-build.bat = NuGet\pack-build.bat
+		NuGet\pack-local.bat = NuGet\pack-local.bat
 		NuGet\package.nuspec = NuGet\package.nuspec
 	EndProjectSection
 EndProject

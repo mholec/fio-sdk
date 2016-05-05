@@ -7,7 +7,7 @@
 
   <Identity Name="18ae192b-f208-4eb8-b277-e7f78eb969af"
             Publisher="CN=Andrej"
-            Version="1.1.0.5" />
+            Version="1.1.0.6" />
 
   <mp:PhoneIdentity PhoneProductId="18ae192b-f208-4eb8-b277-e7f78eb969af" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
