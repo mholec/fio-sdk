@@ -2,6 +2,7 @@
 using System.Net;
 using System.Text;
 using FioSdkCsharp.Models;
+using FioSdkCsharp.Exceptions;
 using Newtonsoft.Json;
 
 namespace FioSdkCsharp
@@ -29,7 +30,7 @@ namespace FioSdkCsharp
             }
             catch (Exception e)
             {
-                throw new ApplicationException("Data can not be provided", e);
+                throw new ApiExplorerException("Data can not be provided", e);
             }
         }
 
@@ -47,7 +48,7 @@ namespace FioSdkCsharp
             }
             catch (Exception e)
             {
-                throw new ApplicationException("Data can not be provided", e);
+                throw new ApiExplorerException("Data can not be provided", e);
             }
         }
 
@@ -64,7 +65,7 @@ namespace FioSdkCsharp
             }
             catch (Exception e)
             {
-                throw new ApplicationException("Data can not be provided", e);
+                throw new ApiExplorerException("Data can not be provided", e);
             }
         }
 
@@ -81,7 +82,7 @@ namespace FioSdkCsharp
             }
             catch (Exception e)
             {
-                throw new ApplicationException("Data can not be provided", e);
+                throw new ApiExplorerException("Data can not be provided", e);
             }
         }
 
@@ -98,7 +99,7 @@ namespace FioSdkCsharp
             }
             catch (Exception e)
             {
-                throw new ApplicationException("Last download date has not been changed", e);
+                throw new ApiExplorerException("Last download date has not been changed", e);
             }
         }
 
@@ -107,13 +108,21 @@ namespace FioSdkCsharp
         /// </summary>
         private string DownloadData(string url)
         {
-            using (var webClient = new WebClient())
+#if NETSTANDARD1_1 || NETSTANDARD1_2 || NETSTANDARD1_3 || NETSTANDARD1_4 || NETSTANDARD1_5 || NETSTANDARD1_6
+			var webClient = new System.Net.Http.HttpClient();
+			webClient.DefaultRequestHeaders.AcceptCharset.Add(new System.Net.Http.Headers.StringWithQualityHeaderValue(Encoding.UTF8.WebName));
+			webClient.DefaultRequestHeaders.UserAgent.Add(new System.Net.Http.Headers.ProductInfoHeaderValue(
+				new System.Net.Http.Headers.ProductHeaderValue("fio-sdk-csharp","2016")));
+	        return webClient.GetStringAsync(url).Result;
+#else
+			using (var webClient = new WebClient())
             {
                 webClient.Headers.Add("user-agent", "SDK for FIO API; https://github.com/mholec/fio-sdk-csharp");
                 webClient.Encoding = Encoding.UTF8;
 
                 return webClient.DownloadString(url);
             }
+#endif
         }
     }
 }

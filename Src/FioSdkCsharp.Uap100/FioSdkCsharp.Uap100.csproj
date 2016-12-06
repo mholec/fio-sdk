@@ -138,7 +138,9 @@
       <Link>TransactionFilter.cs</Link>
     </Compile>
     <Compile Include="ApiExplorer.cs" />
-    <Compile Include="Exceptions\ApiException.cs" />
+    <Compile Include="..\FioSdkCsharp\Exceptions\ApiException.cs" >
+		<Link>Exceptions\ApiException.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\FioSdkCsharp.Uap100.rd.xml" />
   </ItemGroup>
