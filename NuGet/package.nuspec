@@ -1,26 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package>
-  <metadata>
-    <id>FioSdk</id>
-    <title>FIO Banka SDK for C#</title>
-    <version>1.1.0.6</version>
-    <authors>Miroslav Holec</authors>
-    <owners>Miroslav Holec</owners>
-    <summary>FIO Banka SDK for C#</summary>
-    <description>FIO Banka SDK for C#</description>
-    <language>en-US</language>
-    <copyright>© 2016</copyright>
-    <dependencies>
-      <group>
-        <dependency id="Newtonsoft.Json" version="8.0.2"></dependency>
-      </group>
-    </dependencies>
-    <projectUrl>https://github.com/mholec/fio-sdk-csharp</projectUrl>
-    <licenseUrl>https://github.com/mholec/fio-sdk-csharp/blob/master/LICENSE</licenseUrl>
-    <iconUrl>https://holecdrive.blob.core.windows.net/nuget/fio-sdk.png</iconUrl>
-    <tags>fio, sdk, api</tags>
-    <releaseNotes><![CDATA[
+	<metadata>
+		<id>FioSdk</id>
+		<title>FIO Banka SDK for C#</title>
+		<version>1.1.1.0</version>
+		<authors>Miroslav Holec</authors>
+		<owners>Miroslav Holec</owners>
+		<summary>FIO Banka SDK for C#</summary>
+		<description>FIO Banka SDK for C# (including .net core support)</description>
+		<language>en-US</language>
+		<copyright>© 2016</copyright>
+		<dependencies>
+			<group targetFramework=".NETStandard1.1">
+				<dependency id="NETStandard.Library" version="[1.6.1, )" />
+				<dependency id="Newtonsoft.Json" version="[8.0.2, )" />
+			</group>
+			<group>
+				<dependency id="Newtonsoft.Json" version="8.0.2"></dependency>
+			</group>
+		</dependencies>
+		<projectUrl>https://github.com/mholec/fio-sdk-csharp</projectUrl>
+		<licenseUrl>https://github.com/mholec/fio-sdk-csharp/blob/master/LICENSE</licenseUrl>
+		<iconUrl>https://holecdrive.blob.core.windows.net/nuget/fio-sdk.png</iconUrl>
+		<tags>fio, sdk, api</tags>
+		<releaseNotes>
+			<![CDATA[
             For full release notes see https://github.com/mholec/fio-sdk-csharp
-            ]]></releaseNotes>
-  </metadata>
+            ]]>
+		</releaseNotes>
+	</metadata>
 </package>

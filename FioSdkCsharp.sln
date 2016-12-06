@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioSdkCsharp", "Src\FioSdkCsharp\FioSdkCsharp.csproj", "{EED8B91E-106F-4FC7-8548-65AC9198E11E}"
 EndProject
@@ -23,6 +23,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A3D7C357-0D68-4590-8A11-110204C2B993}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioSampleConsoleApp", "Samples\FioSampleConsoleApp\FioSampleConsoleApp.csproj", "{201D671B-281A-4570-A0FF-2E4B2E295883}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD} = {0FA4E9FD-7CB1-412F-B391-6887365034FD}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioSdkCsharp.Net451", "Src\FioSdkCsharp.Net451\FioSdkCsharp.Net451.csproj", "{E5795B86-F1C0-4A65-86BA-2ACD95BFF5A5}"
 EndProject
@@ -40,6 +43,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioSdkCsharp.Uap100", "Src\FioSdkCsharp.Uap100\FioSdkCsharp.Uap100.csproj", "{9F789EC7-7564-4C1A-BDEC-402C62DC5AC6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioUWPUnitTests", "Samples\FioUWPUnitTests\FioUWPUnitTests.csproj", "{AF7DD313-09E6-4BB4-9EB4-2B80EB28E86F}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FioSdkCSharp.NetStandard", "Src\FioSdkCSharp.NetStandard\FioSdkCSharp.NetStandard.xproj", "{0FA4E9FD-7CB1-412F-B391-6887365034FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -169,6 +174,22 @@ Global
 		{AF7DD313-09E6-4BB4-9EB4-2B80EB28E86F}.Release|x86.ActiveCfg = Release|x86
 		{AF7DD313-09E6-4BB4-9EB4-2B80EB28E86F}.Release|x86.Build.0 = Release|x86
 		{AF7DD313-09E6-4BB4-9EB4-2B80EB28E86F}.Release|x86.Deploy.0 = Release|x86
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Debug|ARM.Build.0 = Debug|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Debug|x64.Build.0 = Debug|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Debug|x86.Build.0 = Debug|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Release|ARM.ActiveCfg = Release|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Release|ARM.Build.0 = Release|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Release|x64.ActiveCfg = Release|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Release|x64.Build.0 = Release|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Release|x86.ActiveCfg = Release|Any CPU
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -181,5 +202,6 @@ Global
 		{F96101A9-970C-4DF4-9312-6A306D3493CF} = {A0B4478F-7EAE-41F2-BC8C-EDCE77658139}
 		{9F789EC7-7564-4C1A-BDEC-402C62DC5AC6} = {A0B4478F-7EAE-41F2-BC8C-EDCE77658139}
 		{AF7DD313-09E6-4BB4-9EB4-2B80EB28E86F} = {36737FA5-1628-4A96-89A7-54822A653C9B}
+		{0FA4E9FD-7CB1-412F-B391-6887365034FD} = {A0B4478F-7EAE-41F2-BC8C-EDCE77658139}
 	EndGlobalSection
 EndGlobal

@@ -54,6 +54,9 @@ You can change last download date also:
 
 ## Supported frameworks
 
+- .NET Core & Standard (netstandard1.1 and higher)
+  - Can be referenced from nearly any .net framework
+  - See https://github.com/dotnet/docs/blob/master/docs/core/tutorials/libraries.md#how-to-target-the-net-standard
 - .NET 4.5
 - .NET 4.5.1
 - .NET 4.5.2

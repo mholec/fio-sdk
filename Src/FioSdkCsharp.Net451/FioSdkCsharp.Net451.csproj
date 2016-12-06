@@ -52,6 +52,9 @@
     <Compile Include="..\FioSdkCsharp\Constants.cs">
       <Link>Constants.cs</Link>
     </Compile>
+    <Compile Include="..\FioSdkCsharp\Exceptions\ApiException.cs">
+      <Link>Exceptions\ApiException.cs</Link>
+    </Compile>
     <Compile Include="..\FioSdkCsharp\FioUrl.cs">
       <Link>FioUrl.cs</Link>
     </Compile>

@@ -1,0 +1,38 @@
+﻿{
+	"version": "1.1.1-*",
+	"authors": [ "Miroslav Holec", "Jan Pěnička" ],
+	"buildOptions": {
+		"outputName": "FioSdkCSharp",
+		"compile": {
+			"include": [ "../FioSdkCsharp/**/*.cs" ]
+		}
+	},
+
+	"dependencies": {
+		"NETStandard.Library": "1.6.1",
+		"Newtonsoft.Json": "8.0.2"
+	},
+
+	"frameworks": {
+		"netstandard1.1": {
+			"imports": "dnxcore50"
+		}
+	},
+
+	"packOptions": {
+		"requireLicenseAcceptance": true,
+		"projectUrl": "https://github.com/mholec/fio-sdk-csharp",
+		"licenseUrl": "https://github.com/mholec/fio-sdk-csharp/blob/master/LICENSE",
+		"iconUrl": "https://holecdrive.blob.core.windows.net/nuget/fio-sdk.png",
+		"owners": [ "Miroslav Holec", "Jan Pěnička" ],
+		"tags": [
+			"fio",
+			"sdk",
+			"api",
+			".net",
+			"core",
+			"netstandard"
+		],
+		"releaseNotes": "For full release notes see https://github.com/mholec/fio-sdk-csharp"
+	}
+}
