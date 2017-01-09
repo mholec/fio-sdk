@@ -76,15 +76,16 @@
     <Compile Include="..\FioSdkCsharp\Models\TransactionList.cs">
       <Link>Models\TransactionList.cs</Link>
     </Compile>
-    <Compile Include="..\FioSdkCsharp\Properties\AssemblyInfo.cs">
-      <Link>Properties\AssemblyInfo.cs</Link>
-    </Compile>
     <Compile Include="..\FioSdkCsharp\TransactionFilter.cs">
       <Link>TransactionFilter.cs</Link>
     </Compile>
     <Compile Include="..\FioSdkCsharp\Properties\AssemblyInfo.cs">
       <Link>..\FioSdkCsharp\Properties\AssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26014.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioSdkCsharp", "Src\FioSdkCsharp\FioSdkCsharp.csproj", "{EED8B91E-106F-4FC7-8548-65AC9198E11E}"
 EndProject
@@ -40,6 +40,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioSdkCsharp.Uap100", "Src\FioSdkCsharp.Uap100\FioSdkCsharp.Uap100.csproj", "{9F789EC7-7564-4C1A-BDEC-402C62DC5AC6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FioUWPUnitTests", "Samples\FioUWPUnitTests\FioUWPUnitTests.csproj", "{AF7DD313-09E6-4BB4-9EB4-2B80EB28E86F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{32390660-A8E6-4FCA-A9B3-12402DE58264}"
+	ProjectSection(SolutionItems) = preProject
+		Src\SharedAssemblyInfo.cs = Src\SharedAssemblyInfo.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
