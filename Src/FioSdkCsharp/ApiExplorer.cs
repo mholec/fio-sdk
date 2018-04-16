@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using System.Net.Http;
 using System.Text;
 using FioSdkCsharp.Models;
 using Newtonsoft.Json;
@@ -29,7 +30,7 @@ namespace FioSdkCsharp
             }
             catch (Exception e)
             {
-                throw new ApplicationException("Data can not be provided", e);
+                throw new Exception("Data can not be provided", e);
             }
         }
 
@@ -47,7 +48,7 @@ namespace FioSdkCsharp
             }
             catch (Exception e)
             {
-                throw new ApplicationException("Data can not be provided", e);
+                throw new Exception("Data can not be provided", e);
             }
         }
 
@@ -64,7 +65,7 @@ namespace FioSdkCsharp
             }
             catch (Exception e)
             {
-                throw new ApplicationException("Data can not be provided", e);
+                throw new Exception("Data can not be provided", e);
             }
         }
 
@@ -81,7 +82,7 @@ namespace FioSdkCsharp
             }
             catch (Exception e)
             {
-                throw new ApplicationException("Data can not be provided", e);
+                throw new Exception("Data can not be provided", e);
             }
         }
 
@@ -98,7 +99,7 @@ namespace FioSdkCsharp
             }
             catch (Exception e)
             {
-                throw new ApplicationException("Last download date has not been changed", e);
+                throw new Exception("Last download date has not been changed", e);
             }
         }
 
@@ -107,12 +108,14 @@ namespace FioSdkCsharp
         /// </summary>
         private string DownloadData(string url)
         {
-            using (var webClient = new WebClient())
-            {
-                webClient.Headers.Add("user-agent", "SDK for FIO API; https://github.com/mholec/fio-sdk-csharp");
-                webClient.Encoding = Encoding.UTF8;
-
-                return webClient.DownloadString(url);
+            using(var client = new HttpClient()){
+                using (HttpResponseMessage response = client.GetAsync(url).Result)
+                {
+                    using (HttpContent content = response.Content)
+                    {
+                        return content.ReadAsStringAsync().Result;
+                    }
+                }
             }
         }
     }

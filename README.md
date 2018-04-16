@@ -1,11 +1,13 @@
 # FIO Banka SDK for <span>C#</span>
-**The SDK works with fio API service**. At the present time you can get your bank statement in various data format.
+**The SDK make work with FIO API service much easier**. At the present time you can get your bank statement in various data format.
 
 ## Nuget
 
 You can install SDK for FIO using the NuGet
 
 	PM> Install-Package FioSdk
+	
+From version 2.0.0 added support for .NET Standard 1.3.
 
 ## Quick start
 You can find examples how to use this SDK in the project **samples/FioSampleConsoleApp**
@@ -52,10 +54,6 @@ You can change last download date also:
 
 	explorer.SetLastDownloadDate(DateTime.UtcNow.AddMonths(-1));
 
-## Supported frameworks
+## Supported
 
-- .NET 4.5
-- .NET 4.5.1
-- .NET 4.5.2
-- .NET 4.6
-- Universal Windows Platform
+- .NET Standard 1.3
