@@ -4,8 +4,8 @@ namespace FioSdkCsharp
 {
     public class TransactionFilter
     {
-        private DateTime _from;
-        private DateTime _to;
+        private readonly DateTime _from;
+        private readonly DateTime _to;
 
         public TransactionFilter(DateTime dateFrom, DateTime dateTo)
         {
@@ -13,18 +13,12 @@ namespace FioSdkCsharp
             _to = dateTo;
         }
 
-        public string DateFrom
-        {
-            get { return _from.ToString(Constants.DateFormat); }
-        }
+        public string DateFrom => _from.ToString(Constants.DateFormat);
 
-        public string DateTo
-        {
-            get { return _to.ToString(Constants.DateFormat); }
-        }
+	    public string DateTo => _to.ToString(Constants.DateFormat);
 
 
-        public static TransactionFilter LastDay()
+	    public static TransactionFilter LastDay()
         {
             DateTime now = DateTime.UtcNow;
             return new TransactionFilter(now.AddDays(-1), now);
