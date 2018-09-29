@@ -2,7 +2,7 @@
     <PropertyGroup>
         <TargetFramework>netstandard1.3</TargetFramework>
         <PackageId>FioSdk</PackageId>
-        <Version>2.1.0</Version>
+        <Version>2.1.1</Version>
         <Description>FIO Banka SDK for C#</Description>
         <Copyright>© 2016 - 2018</Copyright>
         <Language>en-US</Language>
