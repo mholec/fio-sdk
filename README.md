@@ -1,13 +1,11 @@
 # FIO Banka SDK for <span>C#</span>
 This SDK make communication with FIO API much easier. At the present time you can get your bank statement in various data format.
 
-<table><tr><td>
 [![Build status](https://mholec.visualstudio.com/DEV/_apis/build/status/FioSDK)](https://mholec.visualstudio.com/DEV/_build/latest?definitionId=42)
-</td><td>
+
 [![Release status](https://mholec.vsrm.visualstudio.com/_apis/public/Release/badge/be71d668-1b9d-4604-ad78-f5d8d1f2194e/10/14)](https://mholec.vsrm.visualstudio.com/_apis/public/Release/badge/be71d668-1b9d-4604-ad78-f5d8d1f2194e/10/14)
-</td><td>
+
 [![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg?style=plastic)](https://www.nuget.org/packages/FioSdk)
-</td></tr></table>
 
 ## Nuget
 
