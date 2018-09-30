@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_FioSdkCsharp.313588066.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\Users\lenovo\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\lenovo\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_FioSdkCsharp.1241871942.00" t="ExcludeRecursive" />
+    <e p="D:\Repo\fio-sdk-csharp" t="IncludeFlat">
       <e p=".nuget" t="Include">
         <e p="NuGet.Config" t="Include" />
         <e p="nuget.exe" t="Include" />
@@ -47,7 +48,7 @@
             <e p="TransactionList.cs" t="Include" />
           </e>
           <e p="obj" t="ExcludeRecursive">
-            <e p="Release" t="Include">
+            <e p="Debug" t="Include">
               <e p="netstandard1.3" t="Include">
                 <e p="FioSdkCsharp.AssemblyInfo.cs" t="Include" />
               </e>
