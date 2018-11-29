@@ -73,4 +73,4 @@ You can change last download date also:
 
 ## Supported frameworks
 
-- .NET Standard 1.3
+- .NET Standard 1.3 and newer
