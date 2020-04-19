@@ -211,7 +211,7 @@ namespace FioSdkCsharp
 	    {
 		    using (var client = new HttpClient())
 		    {
-			    using (HttpResponseMessage response = client.GetAsync(url).Result)
+			    using (HttpResponseMessage response = await client.GetAsync(url))
 			    {
 				    using (HttpContent content = response.Content)
 				    {
