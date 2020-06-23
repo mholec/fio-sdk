@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 using FioSdkCsharp;
 using FioSdkCsharp.Models;
 
@@ -6,27 +8,31 @@ namespace FioSampleConsoleApp
 {
     public class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            ApiExplorer explorer = new ApiExplorer("YOUR_TOKEN_MUST_BE_PRESENT_HERE");
+            // u can use your own httpclient
+            HttpClient httpClient = new HttpClient();
+            
+            ApiExplorer explorer = new ApiExplorer("FIO_TOKEN_HERE", httpClient);
 
             // get new transactions from last check
-            AccountStatement newTransactions = explorer.Last();
+            //AccountStatement newTransactions = await explorer.LastAsync();
 
             // change last check date
-            explorer.SetLastDownloadDate(DateTime.UtcNow.AddMonths(-1));
+            //await explorer.SetLastDownloadDate(DateTime.UtcNow.AddMonths(-1));
 
             // get account statement
-            AccountStatement statement = explorer.Periods(TransactionFilter.LastMonth());
+            AccountStatement statement = await explorer.PeriodsAsync(TransactionFilter.LastMonth());
 
             // browse transactions
             foreach (var transaction in statement.TransactionList.Transactions)
             {
+                Console.ForegroundColor = transaction.Amount.Value < 0 ? ConsoleColor.Red : ConsoleColor.Black;
                 Console.WriteLine(transaction + " - " + transaction.Amount.Value);
             }
 
             // get data in specific format
-            string data = explorer.Periods(TransactionFilter.LastDays(10), Format.Html);
+            string data = await explorer.PeriodsAsync(TransactionFilter.LastDays(10), Format.Html);
         }
     }
 }

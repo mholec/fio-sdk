@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace FioSdkCsharp.Models
 {
     public class TransactionList
     {
-        [JsonProperty(PropertyName = "transaction")]
+        [JsonPropertyName( "transaction")]
         public List<Transaction> Transactions { get; set; }
 
         public override string ToString()

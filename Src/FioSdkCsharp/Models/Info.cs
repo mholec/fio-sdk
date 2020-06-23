@@ -1,49 +1,49 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace FioSdkCsharp.Models
 {
     public class Info
     {
-        [JsonProperty(PropertyName = "accountId")]
+        [JsonPropertyName("accountId")]
         public string AccountId { get; set; }
 
-        [JsonProperty(PropertyName = "bankId")]
+        [JsonPropertyName("bankId")]
         public string BankId { get; set; }
 
-        [JsonProperty(PropertyName = "currency")]
+        [JsonPropertyName("currency")]
         public string Currency { get; set; }
 
-        [JsonProperty(PropertyName = "iban")]
+        [JsonPropertyName("iban")]
         public string Iban { get; set; }
 
-        [JsonProperty(PropertyName = "bic")]
+        [JsonPropertyName("bic")]
         public string Bic { get; set; }
 
-        [JsonProperty(PropertyName = "openingBalance")]
+        [JsonPropertyName("openingBalance")]
         public double OpeningBalance { get; set; }
 
-        [JsonProperty(PropertyName = "closingBalance")]
+        [JsonPropertyName("closingBalance")]
         public double ClosingBalance { get; set; }
 
-        [JsonProperty(PropertyName = "dateStart")]
+        [JsonPropertyName("dateStart")]
         public string DateStart { get; set; }
 
-        [JsonProperty(PropertyName = "dateEnd")]
+        [JsonPropertyName("dateEnd")]
         public string DateEnd { get; set; }
 
-        [JsonProperty(PropertyName = "yearList")]
+        [JsonPropertyName("yearList")]
         public object YearList { get; set; }
 
-        [JsonProperty(PropertyName = "idList")]
+        [JsonPropertyName("idList")]
         public object IdList { get; set; }
 
-        [JsonProperty(PropertyName = "idFrom", NullValueHandling = NullValueHandling.Ignore)]
-        public long IdFrom { get; set; }
+        [JsonPropertyName("idFrom")]
+        public long? IdFrom { get; set; }
 
-        [JsonProperty(PropertyName = "idTo", NullValueHandling = NullValueHandling.Ignore)]
-        public long IdTo { get; set; }
+        [JsonPropertyName("idTo")]
+        public long? IdTo { get; set; }
 
-        [JsonProperty(PropertyName = "idLastDownload")]
+        [JsonPropertyName("idLastDownload")]
         public object IdLastDownload { get; set; }
 
         public override string ToString()

@@ -20,7 +20,7 @@
         /// {0} - token
         /// {1} - date
         /// </summary>
-        public const string SetLast = "https://www.fio.cz/ib_api/rest/set-last-date/{0}/{1}/";
+        public const string SetLast = "https://www.fio.cz/ib_api/rest/set-last-date/{0}/{1}";
 
         /// <summary>
         /// {0} - token

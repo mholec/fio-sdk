@@ -4,18 +4,18 @@ namespace FioSdkCsharp
 {
     public class TransactionFilter
     {
-        private readonly DateTime _from;
-        private readonly DateTime _to;
+        private readonly DateTime from;
+        private readonly DateTime to;
 
-        public TransactionFilter(DateTime dateFrom, DateTime dateTo)
+        private TransactionFilter(DateTime from, DateTime to)
         {
-            _from = dateFrom;
-            _to = dateTo;
+            this.from = from;
+            this.to = to;
         }
 
-        public string DateFrom => _from.ToString(Constants.DateFormat);
+        public string DateFrom => from.ToString(Constants.DateFormat);
 
-	    public string DateTo => _to.ToString(Constants.DateFormat);
+	    public string DateTo => to.ToString(Constants.DateFormat);
 
 
 	    public static TransactionFilter LastDay()

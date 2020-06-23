@@ -1,17 +1,14 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace FioSdkCsharp.Models
 {
     public class Column<T>
     {
-        [JsonProperty(PropertyName = "value")]
-        public T Value { get; set; }
+        [JsonPropertyName("value")] public T Value { get; set; }
 
-        [JsonProperty(PropertyName = "name")]
-        public string Name { get; set; }
+        [JsonPropertyName("name")] public string Name { get; set; }
 
-        [JsonProperty(PropertyName = "id")]
-        public int Id { get; set; }
+        [JsonPropertyName("id")] public int Id { get; set; }
 
         public override string ToString()
         {

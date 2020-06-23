@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\lenovo\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\lenovo\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_FioSdkCsharp.1241871942.00" t="ExcludeRecursive" />
-    <e p="D:\Repo\fio-sdk-csharp" t="IncludeFlat">
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_FioSdkCsharp.1209899926.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p=".nuget" t="Include">
         <e p="NuGet.Config" t="Include" />
         <e p="nuget.exe" t="Include" />
         <e p="NuGet.targets" t="Include" />
       </e>
       <e p="FioSdkCsharp.sln" t="IncludeFlat" />
-      <e p="NuGet" t="Include">
-        <e p="nuget.exe" t="Include" />
-        <e p="pack-build.bat" t="Include" />
-        <e p="pack-local.bat" t="Include" />
-        <e p="package.nuspec" t="Include" />
-      </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="README.md" t="Include" />
       <e p="Samples" t="Include">
@@ -23,11 +19,15 @@
           <e p="App.config" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
           <e p="FioSampleConsoleApp.csproj" t="IncludeRecursive" />
-          <e p="obj" t="ExcludeRecursive" />
-          <e p="Program.cs" t="Include" />
-          <e p="Properties" t="Include">
-            <e p="AssemblyInfo.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.0" t="Include">
+                <e p="FioSampleConsoleApp.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
           </e>
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include" />
         </e>
       </e>
       <e p="Solution Items" t="Include" />
@@ -39,6 +39,10 @@
           <e p="FioSdkCsharp.csproj" t="IncludeRecursive" />
           <e p="FioUrl.cs" t="Include" />
           <e p="Format.cs" t="Include" />
+          <e p="FormatExtensions.cs" t="Include" />
+          <e p="JsonConverters" t="Include">
+            <e p="DateTimeConverter.cs" t="Include" />
+          </e>
           <e p="Models" t="Include">
             <e p="AccountStatement.cs" t="Include" />
             <e p="Column.cs" t="Include" />
@@ -49,7 +53,7 @@
           </e>
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
-              <e p="netstandard1.3" t="Include">
+              <e p="netstandard2.0" t="Include">
                 <e p="FioSdkCsharp.AssemblyInfo.cs" t="Include" />
               </e>
             </e>

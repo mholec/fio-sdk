@@ -1,59 +1,59 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace FioSdkCsharp.Models
 {
     public class Transaction
     {
-        [JsonProperty(PropertyName = "column22")]
+        [JsonPropertyName( "column22")]
         public Column<long> Id { get; set; }
 
-        [JsonProperty(PropertyName = "column0")]
+        [JsonPropertyName( "column0")]
         public Column<DateTime> Date { get; set; }
 
-        [JsonProperty(PropertyName = "column1")]
+        [JsonPropertyName( "column1")]
         public Column<decimal> Amount { get; set; }
 
-        [JsonProperty(PropertyName = "column14")]
+        [JsonPropertyName( "column14")]
         public Column<string> Currency { get; set; }
 
-        [JsonProperty(PropertyName = "column2")]
+        [JsonPropertyName( "column2")]
         public Column<string> CounterpartAccount { get; set; }
 
-        [JsonProperty(PropertyName = "column10")]
+        [JsonPropertyName( "column10")]
         public Column<string> CounterpartAccountName { get; set; }
 
-        [JsonProperty(PropertyName = "column3")]
+        [JsonPropertyName("column3")]
         public Column<string> CounterpartBankCode { get; set; }
 
-        [JsonProperty(PropertyName = "column12")]
+        [JsonPropertyName( "column12")]
         public Column<string> CounterpartBankName { get; set; }
 
-        [JsonProperty(PropertyName = "column4")]
+        [JsonPropertyName( "column4")]
         public Column<string> ConstantSymbol { get; set; }
 
-        [JsonProperty(PropertyName = "column5")]
+        [JsonPropertyName( "column5")]
         public Column<string> VariableSymbol { get; set; }
 
-        [JsonProperty(PropertyName = "column6")]
+        [JsonPropertyName( "column6")]
         public Column<string> SpefificSymbol { get; set; }
 
-        [JsonProperty(PropertyName = "column7")]
+        [JsonPropertyName( "column7")]
         public Column<string> Identification { get; set; }
 
-        [JsonProperty(PropertyName = "column16")]
+        [JsonPropertyName( "column16")]
         public Column<string> MessageForReceipient { get; set; }
 
-        [JsonProperty(PropertyName = "column8")]
+        [JsonPropertyName( "column8")]
         public Column<string> Type { get; set; }
 
-        [JsonProperty(PropertyName = "column9")]
+        [JsonPropertyName("column9")]
         public Column<string> Accountant { get; set; }
 
-        [JsonProperty(PropertyName = "column25")]
+        [JsonPropertyName("column25")]
         public Column<string> Comment { get; set; }
 
-        [JsonProperty(PropertyName = "column17")]
+        [JsonPropertyName( "column17")]
         public Column<long> InstructionId { get; set; }
 
         public override string ToString()

@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace FioSdkCsharp.Models
 {
     public class AccountStatement
     {
-        [JsonProperty(PropertyName = "info")]
+        [JsonPropertyName("info")]
         public Info Info { get; set; }
 
-        [JsonProperty(PropertyName = "transactionList")]
+        [JsonPropertyName("transactionList")]
         public TransactionList TransactionList { get; set; }
     }
 }

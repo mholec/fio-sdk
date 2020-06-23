@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>netstandard1.3</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <PackageId>FioSdk</PackageId>
-        <Version>2.1.1</Version>
+        <Version>3.0.0-preview1</Version>
         <Description>FIO Banka SDK for C#</Description>
-        <Copyright>© 2016 - 2018</Copyright>
+        <Copyright>© 2016 - 2020</Copyright>
         <Language>en-US</Language>
         <Authors>Miroslav Holec</Authors>
         <Title>FIO Banka SDK for C#</Title>
@@ -15,6 +15,6 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+        <PackageReference Include="System.Text.Json" Version="4.7.2" />
     </ItemGroup>
 </Project>

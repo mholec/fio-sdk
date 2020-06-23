@@ -1,33 +1,49 @@
 ﻿using System;
-using System.Net;
+using System.IO;
 using System.Net.Http;
-using System.Text;
+using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
+using FioSdkCsharp.JsonConverters;
 using FioSdkCsharp.Models;
-using Newtonsoft.Json;
 
 namespace FioSdkCsharp
 {
     public class ApiExplorer
     {
-        private readonly string _authToken;
+        private readonly string authToken;
+        private readonly HttpClient httpClient;
+        private readonly JsonSerializerOptions jsonSerializerOptions;
 
-        public ApiExplorer(string authToken)
+        public ApiExplorer(string authToken, HttpClient httpClient = null)
         {
-            _authToken = authToken;
+            this.authToken = authToken;
+            
+            this.jsonSerializerOptions = new JsonSerializerOptions()
+            {
+                PropertyNameCaseInsensitive = true,
+                IgnoreNullValues = true,
+            };
+            this.jsonSerializerOptions.Converters.Add(new DateTimeConverter());
+
+            this.httpClient = httpClient ?? new HttpClient();
+            this.httpClient.DefaultRequestHeaders.Add("SrcLibrary", "nuget.org/fiosdk");
         }
 
         /// <summary>
         /// Returns transactions in selected period
         /// </summary>
-        public AccountStatement Periods(TransactionFilter filter)
+        public async Task<AccountStatement> PeriodsAsync(TransactionFilter filter, CancellationToken ctx = new CancellationToken())
         {
-            string url = string.Format(FioUrl.Periods, _authToken, filter.DateFrom, filter.DateTo, Format.Json.ToString().ToLowerInvariant());
+            string url = string.Format(FioUrl.Periods, authToken, filter.DateFrom, filter.DateTo, Format.Json.AsString());
 
             try
             {
-                string data = DownloadData(url);
-                return JsonConvert.DeserializeObject<RootObject>(data).AccountStatement;
+                Stream data = await GetAsync(url, ctx);
+                RootObject result = await JsonSerializer.DeserializeAsync<RootObject>(data, jsonSerializerOptions, ctx).ConfigureAwait(false);
+                data.Dispose();
+                
+                return result.AccountStatement;
             }
             catch (Exception e)
             {
@@ -35,35 +51,20 @@ namespace FioSdkCsharp
             }
         }
 
-	    /// <summary>
-	    /// Returns transactions in selected period
-	    /// </summary>
-	    public async Task<AccountStatement> PeriodsAsync(TransactionFilter filter)
-	    {
-		    string url = string.Format(FioUrl.Periods, _authToken, filter.DateFrom, filter.DateTo, Format.Json.ToString().ToLowerInvariant());
-
-		    try
-		    {
-			    string data = await DownloadDataAsync(url);
-			    return JsonConvert.DeserializeObject<RootObject>(data).AccountStatement;
-		    }
-		    catch (Exception e)
-		    {
-			    throw new Exception("Data can not be provided", e);
-		    }
-	    }
-
-		/// <summary>
-		/// Returns new transactions from last call
-		/// </summary>
-		public AccountStatement Last()
+        /// <summary>
+        /// Returns new transactions from last call
+        /// </summary>
+        public async Task<AccountStatement> LastAsync(CancellationToken ctx = new CancellationToken())
         {
-            string url = string.Format(FioUrl.Last, _authToken, Format.Json.ToString().ToLowerInvariant());
+            string url = string.Format(FioUrl.Last, authToken, Format.Json.AsString());
 
             try
             {
-                string data = DownloadData(url);
-                return JsonConvert.DeserializeObject<RootObject>(data).AccountStatement;
+                Stream data = await GetAsync(url, ctx);
+                RootObject result = await JsonSerializer.DeserializeAsync<RootObject>(data, jsonSerializerOptions, ctx).ConfigureAwait(false);
+                data.Dispose();
+                
+                return result.AccountStatement;
             }
             catch (Exception e)
             {
@@ -71,34 +72,16 @@ namespace FioSdkCsharp
             }
         }
 
-		/// <summary>
-		/// Returns new transactions from last call
-		/// </summary>
-		public async Task<AccountStatement> LastAsync()
-		{
-			string url = string.Format(FioUrl.Last, _authToken, Format.Json.ToString().ToLowerInvariant());
-
-			try
-			{
-				string data = await DownloadDataAsync(url);
-				return JsonConvert.DeserializeObject<RootObject>(data).AccountStatement;
-			}
-			catch (Exception e)
-			{
-				throw new Exception("Data can not be provided", e);
-			}
-		}
-
-		/// <summary>
-		/// Returns transactions in selected period in requested format
-		/// </summary>
-		public string Periods(TransactionFilter filter, Format format)
+        /// <summary>
+        /// Returns transactions in selected period in requested format
+        /// </summary>
+        public async Task<string> PeriodsAsync(TransactionFilter filter, Format format, CancellationToken ctx = new CancellationToken())
         {
-            string url = string.Format(FioUrl.Periods, _authToken, filter.DateFrom, filter.DateTo, format.ToString().ToLowerInvariant());
+            string url = string.Format(FioUrl.Periods, authToken, filter.DateFrom, filter.DateTo, format.AsString());
 
             try
             {
-                return DownloadData(url);
+                return await GetStringAsync(url, ctx).ConfigureAwait(false);
             }
             catch (Exception e)
             {
@@ -106,33 +89,16 @@ namespace FioSdkCsharp
             }
         }
 
-	    /// <summary>
-	    /// Returns transactions in selected period in requested format
-	    /// </summary>
-	    public async Task<string> PeriodsAsync(TransactionFilter filter, Format format)
-	    {
-		    string url = string.Format(FioUrl.Periods, _authToken, filter.DateFrom, filter.DateTo, format.ToString().ToLowerInvariant());
-
-		    try
-		    {
-				return await DownloadDataAsync(url);
-		    }
-		    catch (Exception e)
-		    {
-			    throw new Exception("Data can not be provided", e);
-		    }
-	    }
-
-		/// <summary>
-		/// Returns new transactions from last call in requested format
-		/// </summary>
-		public string Last(Format format)
+        /// <summary>
+        /// Returns new transactions from last call in requested format
+        /// </summary>
+        public async Task<string> LastAsync(Format format, CancellationToken ctx = new CancellationToken())
         {
-            string url = string.Format(FioUrl.Last, _authToken, format.ToString().ToLowerInvariant());
+            string url = string.Format(FioUrl.Last, authToken, format.ToString().ToLowerInvariant());
 
             try
             {
-                return DownloadData(url);
+                return await GetStringAsync(url, ctx).ConfigureAwait(false);
             }
             catch (Exception e)
             {
@@ -140,33 +106,16 @@ namespace FioSdkCsharp
             }
         }
 
-	    /// <summary>
-	    /// Returns new transactions from last call in requested format
-	    /// </summary>
-	    public async Task<string> LastAsync(Format format)
-	    {
-		    string url = string.Format(FioUrl.Last, _authToken, format.ToString().ToLowerInvariant());
-
-		    try
-		    {
-			    return await DownloadDataAsync(url);
-		    }
-		    catch (Exception e)
-		    {
-			    throw new Exception("Data can not be provided", e);
-		    }
-	    }
-
-		/// <summary>
-		/// Changes last check date (suitable for Last() method)
-		/// </summary>
-		public void SetLastDownloadDate(DateTime date)
+        /// <summary>
+        /// Changes last check date (suitable for Last() method)
+        /// </summary>
+        public async Task SetLastDownloadDate(DateTime date, CancellationToken ctx = new CancellationToken())
         {
-            string url = string.Format(FioUrl.SetLast, _authToken, date.ToString(Constants.DateFormat));
+            string url = string.Format(FioUrl.SetLast, authToken, date.ToString(Constants.DateFormat));
 
             try
             {
-                DownloadData(url);
+                await GetAsync(url, ctx).ConfigureAwait(false);
             }
             catch (Exception e)
             {
@@ -174,51 +123,33 @@ namespace FioSdkCsharp
             }
         }
 
-	    /// <summary>
-	    /// Changes last check date (suitable for Last() method)
-	    /// </summary>
-	    public async void SetLastDownloadDateAsync(DateTime date)
-	    {
-		    string url = string.Format(FioUrl.SetLast, _authToken, date.ToString(Constants.DateFormat));
-
-		    try
-		    {
-			    await DownloadDataAsync(url);
-		    }
-		    catch (Exception e)
-		    {
-			    throw new Exception("Last download date has not been changed", e);
-		    }
-	    }
-
-		/// <summary>
-		/// Downloads data as string from FIO API 
-		/// </summary>
-		private string DownloadData(string url)
+        /// <summary>
+        /// Changes last check date (suitable for Last() method)
+        /// </summary>
+        public async Task SetLastDownloadDateAsync(DateTime date, CancellationToken ctx = new CancellationToken())
         {
-            using(var client = new HttpClient()){
-                using (HttpResponseMessage response = client.GetAsync(url).Result)
-                {
-                    using (HttpContent content = response.Content)
-                    {
-                        return content.ReadAsStringAsync().Result;
-                    }
-                }
+            string url = string.Format(FioUrl.SetLast, authToken, date.ToString(Constants.DateFormat));
+
+            try
+            {
+                await GetAsync(url, ctx).ConfigureAwait(false);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Last download date has not been changed", e);
             }
         }
 
-	    private async Task<string> DownloadDataAsync(string url)
-	    {
-		    using (var client = new HttpClient())
-		    {
-			    using (HttpResponseMessage response = client.GetAsync(url).Result)
-			    {
-				    using (HttpContent content = response.Content)
-				    {
-					    return await content.ReadAsStringAsync();
-				    }
-			    }
-		    }
-		}
+        private async Task<Stream> GetAsync(string url, CancellationToken ctx)
+        {
+            HttpResponseMessage response = await httpClient.GetAsync(url, ctx);
+            return await response.Content.ReadAsStreamAsync();
+        }
+        
+        private async Task<string> GetStringAsync(string url, CancellationToken ctx)
+        {
+            HttpResponseMessage response = await httpClient.GetAsync(url, ctx);
+            return await response.Content.ReadAsStringAsync();
+        }
     }
 }

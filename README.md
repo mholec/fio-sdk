@@ -11,16 +11,26 @@ You can install SDK for FIO using the NuGet
 
 	PM> Install-Package FioSdk
 
-From version 2.0.0 added support for .NET Standard 1.3.
+Version 3.0.0. contains important breaking changes. Due to using System.Text.Json library target framework has been changed to NET Standard 2.0.
 
 
-#### Version 2.1.0 +
+#### Version 3.0.0
+
+- all methods support async calls only
+- cancellation tokens support
+- changed target framework to .NET Standard 2.0
+- implemented System.Text.Json instead of Newtonsoft.Json
+- possibility to pass own HttpClient to ApiExplorer
+- common code cleanup
+
+#### Version 2.1.0
 
 - all methods support async calls
 
-#### Version 2.0.0 +
 
-- support for .NET Standard 1.3
+#### Version 2.0.0
+
+- added support for .NET Standard 1.3
 
 
 ## Quick start
@@ -36,7 +46,8 @@ At the beginning you must obtain your access token. You can obtain it in your [F
 Once you have your token, you can use SDK and get information about your statement
 
 	// create your API explorer
-	ApiExplorer explorer = new ApiExplorer("YOUR_TOKEN_MUST_BE_PRESENT_HERE");
+	HttpClient optionalHc = new HttpClient();
+	ApiExplorer explorer = new ApiExplorer("YOUR_TOKEN_MUST_BE_PRESENT_HERE", optionalHc);
 	
 	// get account statement
 	AccountStatement statement = explorer.Periods(TransactionFilter.LastMonth());
@@ -71,4 +82,4 @@ You can change last download date also:
 
 ## Supported frameworks
 
-- .NET Standard 1.3 and newer
+- .NET Standard 2.0 +

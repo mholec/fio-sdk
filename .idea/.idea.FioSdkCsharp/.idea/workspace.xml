@@ -1,88 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:pr" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0144515d-11ca-4fd3-a7e2-a922a606a9a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.FioSdkCsharp/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.FioSdkCsharp/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.FioSdkCsharp/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/FormatExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/JsonConverters/DateTimeConverter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FioSdkCsharp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FioSdkCsharp/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FioSdkCsharp/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FioSdkCsharp/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FioSdkCsharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FioSdkCsharp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FioSdkCsharp.sln" beforeDir="false" afterPath="$PROJECT_DIR$/FioSdkCsharp.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Samples/FioSampleConsoleApp/FioSampleConsoleApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Samples/FioSampleConsoleApp/FioSampleConsoleApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Samples/FioSampleConsoleApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Samples/FioSampleConsoleApp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Samples/FioSampleConsoleApp/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/FioSdkCsharp/ApiExplorer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/ApiExplorer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/FioSdkCsharp/FioSdkCsharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/FioSdkCsharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/FioSdkCsharp/FioUrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/FioUrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/AccountStatement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/AccountStatement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/Column.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/Column.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/Info.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/Info.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/RootObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/RootObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/Transaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/Transaction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/TransactionList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/Models/TransactionList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/FioSdkCsharp/TransactionFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/FioSdkCsharp/TransactionFilter.cs" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-584298157">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cs" value="1" />
-          <entry key="csproj" value="1" />
-          <entry key="targets" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="C#" value="1" />
-          <entry key="Csproj" value="1" />
-          <entry key="MsBuild targets file" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="csproj" value="2" />
-          <entry key="txt" value="45" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Csproj" value="2" />
-          <entry key="PLAIN_TEXT" value="45" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Src/FioSdkCsharp/ApiExplorer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="90" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Src/FioSdkCsharp/FioSdkCsharp.csproj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Column.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06BB5FF0-1A29-499C-9571-1101F7D9931E/2d/99ad7f79/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Samples/FioSampleConsoleApp/App.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/JsonConverters/DateTimeConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Info.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///FioUrl.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C66E0E71-F4B3-4DF6-B204-DBC6BB77246B/18/3a2dc170/Enum.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/FormatExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///AccountStatement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///ApiExplorer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/Models/Info.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2A1CDB5E-DCB7-4FB1-B109-96572DA06B60/d4/03cceb43/HttpClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/Models/TransactionList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///RootObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/Models/Transaction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/06BB5FF0-1A29-499C-9571-1101F7D9931E/284/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/Models/Column.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/Models/RootObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Samples/FioSampleConsoleApp/obj/Debug/netcoreapp2.0/FioSampleConsoleApp.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Transaction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/TransactionFilter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/ApiExplorer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/Models/AccountStatement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/Constants.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/FioUrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Src/FioSdkCsharp/Format.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Samples/FioSampleConsoleApp/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Src/FioSdkCsharp/FioUrl.cs" />
+        <option value="$PROJECT_DIR$/Src/FioSdkCsharp/Format.cs" />
+        <option value="$PROJECT_DIR$/Src/FioSdkCsharp/Models/Info.cs" />
+        <option value="$PROJECT_DIR$/Src/FioSdkCsharp/Models/TransactionList.cs" />
+        <option value="$PROJECT_DIR$/Src/FioSdkCsharp/Models/Column.cs" />
+        <option value="$PROJECT_DIR$/Src/FioSdkCsharp/TransactionFilter.cs" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Samples/FioSampleConsoleApp/FioSampleConsoleApp.csproj" />
+        <option value="$PROJECT_DIR$/Src/FioSdkCsharp/Models/RootObject.cs" />
+        <option value="$PROJECT_DIR$/Src/FioSdkCsharp/Models/Transaction.cs" />
+        <option value="$PROJECT_DIR$/Src/FioSdkCsharp/Models/AccountStatement.cs" />
+        <option value="$PROJECT_DIR$/Src/FioSdkCsharp/DateTimeConverter.cs" />
         <option value="$PROJECT_DIR$/Src/FioSdkCsharp/FioSdkCsharp.csproj" />
+        <option value="$PROJECT_DIR$/Samples/FioSampleConsoleApp/Program.cs" />
+        <option value="$PROJECT_DIR$/Src/FioSdkCsharp/ApiExplorer.cs" />
       </list>
     </option>
   </component>
@@ -92,74 +113,43 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2142" />
-    <option name="y" value="26" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
+  <component name="ProjectId" id="1daB2vvG8RJPJx1OaT5NaKfXYJe" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="SolutionExplorer" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="FioSdkCsharp" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="FioSdkCsharp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Src" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-all-files" value="false" />
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34975636" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29994586" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
-    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+    <configuration name="Sample" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Samples/FioSampleConsoleApp/bin/Debug/netcoreapp2.0/FioSampleConsoleApp.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Samples/FioSampleConsoleApp/bin/Debug/netcoreapp2.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Samples/FioSampleConsoleApp/FioSampleConsoleApp.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
       <method v="2">
-        <option name="Build" enabled="true" />
+        <option name="Build" />
       </method>
     </configuration>
   </component>
@@ -175,6 +165,8 @@
       <updated>1538242622896</updated>
       <workItem from="1538242625876" duration="1270000" />
       <workItem from="1538244640873" duration="654000" />
+      <workItem from="1592653127135" duration="3463000" />
+      <workItem from="1592935903361" duration="2850000" />
     </task>
     <task id="LOCAL-00001" summary="Update to 2.1.0 before NuGet push">
       <created>1538244693627</created>
@@ -186,59 +178,163 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1924000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Build" order="14" visible="true" weight="0.3295964" />
-      <window_info anchor="right" id="Errors In Solution" order="0" />
-      <window_info anchor="right" id="Database" order="1" />
-      <window_info anchor="right" id="Unit Tests Coverage" order="2" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="6" visible="true" weight="0.25305623" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Update to 2.1.0 before NuGet push" />
     <option name="LAST_COMMIT_MESSAGE" value="Update to 2.1.0 before NuGet push" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="635" y="238" key="#Default" timestamp="1592655994205">
+      <screen x="0" y="23" width="1920" height="1131" />
+    </state>
+    <state x="635" y="238" key="#Default/0.23.1920.1131@0.23.1920.1131" timestamp="1592655994205" />
+    <state x="424" y="250" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592656078934">
+      <screen x="0" y="23" width="1920" height="1131" />
+    </state>
+    <state x="424" y="250" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1131@0.23.1920.1131" timestamp="1592656078934" />
+    <state x="648" y="331" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592654493477">
+      <screen x="0" y="23" width="1920" height="1131" />
+    </state>
+    <state x="648" y="331" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1131@0.23.1920.1131" timestamp="1592654493477" />
+    <state width="1033" height="556" key="DebuggerActiveHint" timestamp="1592943612005">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1033" height="556" key="DebuggerActiveHint/0.0.1920.1200@0.0.1920.1200" timestamp="1592943612005" />
+    <state width="410" height="524" key="DebuggerActiveHint/0.23.1920.1131@0.23.1920.1131" timestamp="1592936204421" />
+    <state width="1878" height="441" key="GridCell.Tab.0.bottom" timestamp="1592943676420">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1592943676420" />
+    <state width="1878" height="441" key="GridCell.Tab.0.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494899" />
+    <state width="1878" height="441" key="GridCell.Tab.0.center" timestamp="1592943676419">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1592943676419" />
+    <state width="1878" height="441" key="GridCell.Tab.0.center/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494897" />
+    <state width="1878" height="441" key="GridCell.Tab.0.left" timestamp="1592943676419">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1592943676419" />
+    <state width="1878" height="441" key="GridCell.Tab.0.left/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494897" />
+    <state width="1878" height="441" key="GridCell.Tab.0.right" timestamp="1592943676420">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1592943676420" />
+    <state width="1878" height="441" key="GridCell.Tab.0.right/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494898" />
+    <state width="1878" height="441" key="GridCell.Tab.1.bottom" timestamp="1592943673325">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1592943673325" />
+    <state width="1878" height="441" key="GridCell.Tab.1.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1592943497918" />
+    <state width="1878" height="441" key="GridCell.Tab.1.center" timestamp="1592943673324">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1592943673324" />
+    <state width="1878" height="441" key="GridCell.Tab.1.center/0.23.1920.1131@0.23.1920.1131" timestamp="1592943497916" />
+    <state width="1878" height="441" key="GridCell.Tab.1.left" timestamp="1592943673324">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1592943673324" />
+    <state width="1878" height="441" key="GridCell.Tab.1.left/0.23.1920.1131@0.23.1920.1131" timestamp="1592943497916" />
+    <state width="1878" height="441" key="GridCell.Tab.1.right" timestamp="1592943673324">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1592943673324" />
+    <state width="1878" height="441" key="GridCell.Tab.1.right/0.23.1920.1131@0.23.1920.1131" timestamp="1592943497918" />
+    <state width="1878" height="441" key="GridCell.Tab.2.bottom" timestamp="1592943669647">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.2.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669647" />
+    <state width="1878" height="441" key="GridCell.Tab.2.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494690" />
+    <state width="1878" height="441" key="GridCell.Tab.2.center" timestamp="1592943669646">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.2.center/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669646" />
+    <state width="1878" height="441" key="GridCell.Tab.2.center/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494687" />
+    <state width="1878" height="441" key="GridCell.Tab.2.left" timestamp="1592943669646">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.2.left/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669646" />
+    <state width="1878" height="441" key="GridCell.Tab.2.left/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494686" />
+    <state width="1878" height="441" key="GridCell.Tab.2.right" timestamp="1592943669647">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.2.right/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669647" />
+    <state width="1878" height="441" key="GridCell.Tab.2.right/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494690" />
+    <state width="1878" height="441" key="GridCell.Tab.3.bottom" timestamp="1592943669648">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.3.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669648" />
+    <state width="1878" height="441" key="GridCell.Tab.3.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494692" />
+    <state width="1878" height="441" key="GridCell.Tab.3.center" timestamp="1592943669648">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.3.center/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669648" />
+    <state width="1878" height="441" key="GridCell.Tab.3.center/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494691" />
+    <state width="1878" height="441" key="GridCell.Tab.3.left" timestamp="1592943669647">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.3.left/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669647" />
+    <state width="1878" height="441" key="GridCell.Tab.3.left/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494691" />
+    <state width="1878" height="441" key="GridCell.Tab.3.right" timestamp="1592943669648">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.3.right/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669648" />
+    <state width="1878" height="441" key="GridCell.Tab.3.right/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494691" />
+    <state width="1878" height="441" key="GridCell.Tab.4.bottom" timestamp="1592943669649">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.4.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669649" />
+    <state width="1878" height="441" key="GridCell.Tab.4.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494695" />
+    <state width="1878" height="441" key="GridCell.Tab.4.center" timestamp="1592943669649">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.4.center/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669649" />
+    <state width="1878" height="441" key="GridCell.Tab.4.center/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494693" />
+    <state width="1878" height="441" key="GridCell.Tab.4.left" timestamp="1592943669648">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.4.left/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669648" />
+    <state width="1878" height="441" key="GridCell.Tab.4.left/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494692" />
+    <state width="1878" height="441" key="GridCell.Tab.4.right" timestamp="1592943669649">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="441" key="GridCell.Tab.4.right/0.0.1920.1200@0.0.1920.1200" timestamp="1592943669649" />
+    <state width="1878" height="441" key="GridCell.Tab.4.right/0.23.1920.1131@0.23.1920.1131" timestamp="1592943494694" />
+    <state x="600" y="323" key="RiderGenerateDialog" timestamp="1592943118972">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="600" y="323" key="RiderGenerateDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1592943118972" />
+    <state width="960" height="718" key="XDebugger.FullValuePopup" timestamp="1592942852074">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="960" height="718" key="XDebugger.FullValuePopup/0.0.1920.1200@0.0.1920.1200" timestamp="1592942852074" />
+    <state width="960" height="676" key="XDebugger.FullValuePopup/0.23.1920.1131@0.23.1920.1131" timestamp="1592936204411" />
+    <state x="748" y="509" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592943849692">
+      <screen x="0" y="23" width="1920" height="1131" />
+    </state>
+    <state x="748" y="509" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1131@0.23.1920.1131" timestamp="1592943849692" />
+    <state x="623" y="274" width="672" height="678" key="search.everywhere.popup" timestamp="1592656637289">
+      <screen x="0" y="23" width="1920" height="1131" />
+    </state>
+    <state x="623" y="274" width="672" height="678" key="search.everywhere.popup/0.23.1920.1131@0.23.1920.1131" timestamp="1592656637289" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -249,28 +345,5 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/Microsoft.Common.CurrentVersion.targets">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/FioSdkCsharp/ApiExplorer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="90" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/FioSdkCsharp/FioSdkCsharp.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
