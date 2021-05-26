@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Text.Json.Serialization;
 
 namespace FioSdkCsharp.Models
@@ -36,7 +37,10 @@ namespace FioSdkCsharp.Models
         public Column<string> VariableSymbol { get; set; }
 
         [JsonPropertyName( "column6")]
-        public Column<string> SpefificSymbol { get; set; }
+        public Column<string> SpecificSymbol { get; set; }
+
+        [JsonIgnore, EditorBrowsable(EditorBrowsableState.Never)]
+        public Column<string> SpefificSymbol { get => SpecificSymbol; set => SpecificSymbol = value; }
 
         [JsonPropertyName( "column7")]
         public Column<string> Identification { get; set; }
