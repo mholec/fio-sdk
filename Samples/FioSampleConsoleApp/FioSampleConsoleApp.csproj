@@ -1,12 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <OutputType>exe</OutputType>
   </PropertyGroup>
+
   <ItemGroup>
-    <ProjectReference Include="..\..\Src\FioSdkCsharp\FioSdkCsharp.csproj" />
+    <ProjectReference Include="..\..\Src\FioSdkCsharp.Extensions.DependencyInjection\FioSdkCsharp.Extensions.DependencyInjection.csproj" />
   </ItemGroup>
+
   <ItemGroup>
-    <Folder Include="Properties" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
   </ItemGroup>
+
 </Project>

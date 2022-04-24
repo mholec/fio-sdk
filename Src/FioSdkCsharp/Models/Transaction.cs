@@ -8,12 +8,18 @@ namespace FioSdkCsharp.Models
         [JsonPropertyName( "column22")]
         public Column<long> Id { get; set; }
 
+        /// <summary>
+        /// YYYY-MM-DD+GMT
+        /// </summary>
         [JsonPropertyName( "column0")]
         public Column<DateTime> Date { get; set; }
 
         [JsonPropertyName( "column1")]
         public Column<decimal> Amount { get; set; }
 
+        /// <summary>
+        /// ISO 4217
+        /// </summary>
         [JsonPropertyName( "column14")]
         public Column<string> Currency { get; set; }
 

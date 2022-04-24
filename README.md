@@ -1,53 +1,41 @@
-[![Build status](https://mholec.visualstudio.com/DEV/_apis/build/status/FioSDK)](https://mholec.visualstudio.com/DEV/_build/latest?definitionId=42)
-[![Release status](https://mholec.vsrm.visualstudio.com/_apis/public/Release/badge/be71d668-1b9d-4604-ad78-f5d8d1f2194e/10/14)](https://mholec.vsrm.visualstudio.com/_apis/public/Release/badge/be71d668-1b9d-4604-ad78-f5d8d1f2194e/10/14)
 [![NuGet](https://img.shields.io/nuget/v/FioSdk.svg?style=plastic)](https://www.nuget.org/packages/FioSdk)
 
-# FIO Banka SDK for <span>C#</span>
-This SDK make communication with FIO API much easier. At the present time you can get your bank statement in various data format.
-
-## Nuget
-
-You can install SDK for FIO using the NuGet
-
-	PM> Install-Package FioSdk
-
-Version 3.0.0. contains important breaking changes. Due to using System.Text.Json library target framework has been changed to NET Standard 2.0.
-
-
-#### Version 3.0.0
-
-- all methods support async calls only
-- cancellation tokens support
-- changed target framework to .NET Standard 2.0
-- implemented System.Text.Json instead of Newtonsoft.Json
-- possibility to pass own HttpClient to ApiExplorer
-- common code cleanup
-
-#### Version 2.1.0
-
-- all methods support async calls
-
-
-#### Version 2.0.0
-
-- added support for .NET Standard 1.3
-
+# FIO Banka Client for <span>C#</span>
+This client library make communication with FIO API much easier. 
 
 ## Quick start
 
-You can find examples how to use this SDK in the project **samples/FioSampleConsoleApp**
+Examples of how to use Fio Client can be found in the sample project **samples/FioSampleConsoleApp**
 
-Notice, that you can call up API every 30 seconds.
+**Please note that FIO only allows one API call per 30 seconds.**
 
 ### Step 1: Get your access token
 At the beginning you must obtain your access token. You can obtain it in your [FIO internetbanking](http://www.fio.cz/ib2/login). Your token must have read access (writing is not required at this moment).
 
-### Step 2: Play with SDK
-Once you have your token, you can use SDK and get information about your statement
+### Step 2: Install Fio Client
 
-	// create your API explorer
-	HttpClient optionalHc = new HttpClient();
-	ApiExplorer explorer = new ApiExplorer("YOUR_TOKEN_MUST_BE_PRESENT_HERE", optionalHc);
+Install client via NuGet package
+
+	PM> Install-Package FioSdk
+
+Alternatively, you can use integration package for **Microsoft DI**
+
+	PM> Install-Package FioSdk.Extensions.DependencyInjection
+
+### Step 3: Play with SDK
+Once you have your token and client installed, you can use SDK and get information about your statement
+
+	// create FioClient directly
+	using(HttpClient httpClient = new HttpClient())
+    {
+       IFioClient simpleClient = FioClient.Create(httpClient, new FioClientConfiguration()
+       {
+          AuthToken = "AUTH_TOKEN"
+       });
+    }
+
+    // OR create FioClient using MSDI
+    services.AddFioClient("AUTH_TOKEN");
 	
 	// get account statement
 	AccountStatement statement = explorer.Periods(TransactionFilter.LastMonth());
@@ -82,4 +70,28 @@ You can change last download date also:
 
 ## Supported frameworks
 
-- .NET Standard 2.0 +
+- .NET Standard 2.1 + (for version > 3.0)
+- .NET Standard 2.0 + (for version < 3.0)
+
+
+## Changelist
+
+#### Version 3.0.0
+
+Version 3.0.0. contains important breaking changes. Due to using System.Text.Json library target framework has been changed to NET Standard 2.0.
+
+- all methods support async calls only
+- cancellation tokens support
+- changed target framework to .NET Standard 2.0
+- implemented System.Text.Json instead of Newtonsoft.Json
+- possibility to pass own HttpClient to ApiExplorer
+- common code cleanup
+
+#### Version 2.1.0
+
+- all methods support async calls
+
+
+#### Version 2.0.0
+
+- added support for .NET Standard 1.3

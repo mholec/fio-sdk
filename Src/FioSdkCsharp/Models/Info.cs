@@ -4,18 +4,30 @@ namespace FioSdkCsharp.Models
 {
     public class Info
     {
+        /// <summary>
+        /// CZ:
+        /// </summary>
         [JsonPropertyName("accountId")]
         public string AccountId { get; set; }
 
         [JsonPropertyName("bankId")]
         public string BankId { get; set; }
 
+        /// <summary>
+        /// ISO 4217
+        /// </summary>
         [JsonPropertyName("currency")]
         public string Currency { get; set; }
 
+        /// <summary>
+        /// ISO 13616
+        /// </summary>
         [JsonPropertyName("iban")]
         public string Iban { get; set; }
 
+        /// <summary>
+        ///  ISO 9362
+        /// </summary>
         [JsonPropertyName("bic")]
         public string Bic { get; set; }
 
@@ -25,12 +37,21 @@ namespace FioSdkCsharp.Models
         [JsonPropertyName("closingBalance")]
         public double ClosingBalance { get; set; }
 
+        /// <summary>
+        /// YYYY-MM-DD+GMT
+        /// </summary>
         [JsonPropertyName("dateStart")]
         public string DateStart { get; set; }
 
+        /// <summary>
+        /// YYYY-MM-DD+GMT
+        /// </summary>
         [JsonPropertyName("dateEnd")]
         public string DateEnd { get; set; }
 
+        /// <summary>
+        /// YYYY
+        /// </summary>
         [JsonPropertyName("yearList")]
         public object YearList { get; set; }
 

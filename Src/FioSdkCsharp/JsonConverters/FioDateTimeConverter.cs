@@ -5,19 +5,19 @@ using System.Text.Json.Serialization;
 
 namespace FioSdkCsharp.JsonConverters
 {
-    public class DateTimeConverter : JsonConverter<DateTime>
+    public class FioDateTimeConverter : JsonConverter<DateTime>
     {
         public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             var str = reader.GetString();
-            DateTime dt = DateTime.ParseExact(str, "yyyy-MM-ddzzz", new CultureInfo("cs-CZ"));
+            DateTime date = DateTime.ParseExact(str, "yyyy-MM-ddzzz", new CultureInfo("cs-CZ"));
 
-            return dt;
+            return date;
         }
 
-        public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
+        public override void Write(Utf8JsonWriter writer, DateTime dateValue, JsonSerializerOptions options)
         {
-            writer.WriteStringValue(value);
+            writer.WriteStringValue(dateValue);
         }
     }
 }

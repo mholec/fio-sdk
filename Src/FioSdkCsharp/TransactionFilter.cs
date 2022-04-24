@@ -4,66 +4,65 @@ namespace FioSdkCsharp
 {
     public class TransactionFilter
     {
-        private readonly DateTime from;
-        private readonly DateTime to;
+        private readonly DateTime _from;
+        private readonly DateTime _to;
 
         private TransactionFilter(DateTime from, DateTime to)
         {
-            this.from = from;
-            this.to = to;
+            _from = from;
+            _to = to;
         }
 
-        public string DateFrom => from.ToString(Constants.DateFormat);
+        public string DateFrom => _from.ToString(Constants.DateFormat);
 
-	    public string DateTo => to.ToString(Constants.DateFormat);
+	    public string DateTo => _to.ToString(Constants.DateFormat);
 
-
-	    public static TransactionFilter LastDay()
+	    public static TransactionFilter LastDay(DateTime? now = null)
         {
-            DateTime now = DateTime.UtcNow;
-            return new TransactionFilter(now.AddDays(-1), now);
+            now ??= DateTime.UtcNow;
+            return new TransactionFilter(now.Value.AddDays(-1), now.Value);
         }
 
-        public static TransactionFilter LastWeek()
+        public static TransactionFilter LastWeek(DateTime? now = null)
         {
-            DateTime now = DateTime.UtcNow;
-            return new TransactionFilter(now.AddDays(-7), now);
+            now ??= DateTime.UtcNow;
+            return new TransactionFilter(now.Value.AddDays(-7), now.Value);
         }
 
-        public static TransactionFilter LastMonth()
+        public static TransactionFilter LastMonth(DateTime? now = null)
         {
-            DateTime now = DateTime.UtcNow;
-            return new TransactionFilter(now.AddMonths(-1), now);
+            now ??= DateTime.UtcNow;
+            return new TransactionFilter(now.Value.AddMonths(-1), now.Value);
         }
 
-        public static TransactionFilter LastYear()
+        public static TransactionFilter LastYear(DateTime? now = null)
         {
-            DateTime now = DateTime.UtcNow;
-            return new TransactionFilter(now.AddYears(-1), now);
+            now ??= DateTime.UtcNow;
+            return new TransactionFilter(now.Value.AddYears(-1), now.Value);
         }
 
-        public static TransactionFilter LastDays(int days)
+        public static TransactionFilter LastDays(int days, DateTime? now = null)
         {
-            DateTime now = DateTime.UtcNow;
-            return new TransactionFilter(now.AddDays(-1 * days), now);
+            now ??= DateTime.UtcNow;
+            return new TransactionFilter(now.Value.AddDays(-1 * days), now.Value);
         }
 
-        public static TransactionFilter LastWeeks(int weeks)
+        public static TransactionFilter LastWeeks(int weeks, DateTime? now = null)
         {
-            DateTime now = DateTime.UtcNow;
-            return new TransactionFilter(now.AddDays(-1 * 7 * weeks), now);
+            now ??= DateTime.UtcNow;
+            return new TransactionFilter(now.Value.AddDays(-1 * 7 * weeks), now.Value);
         }
 
-        public static TransactionFilter LastMonths(int months)
+        public static TransactionFilter LastMonths(int months, DateTime? now = null)
         {
-            DateTime now = DateTime.UtcNow;
-            return new TransactionFilter(now.AddMonths(-1 * months), now);
+            now ??= DateTime.UtcNow;
+            return new TransactionFilter(now.Value.AddMonths(-1 * months), now.Value);
         }
 
-        public static TransactionFilter LastYears(int years)
+        public static TransactionFilter LastYears(int years, DateTime? now = null)
         {
-            DateTime now = DateTime.UtcNow;
-            return new TransactionFilter(now.AddYears(-1 * years), now);
+            now ??= DateTime.UtcNow;
+            return new TransactionFilter(now.Value.AddYears(-1 * years), now.Value);
         }
     }
 }
