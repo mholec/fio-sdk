@@ -38,7 +38,7 @@ Once you have your token and client installed, you can use SDK and get informati
     services.AddFioClient("AUTH_TOKEN");
 	
 	// get account statement
-	AccountStatement statement = explorer.Periods(TransactionFilter.LastMonth());
+	AccountStatement statement = client.Periods(TransactionFilter.LastMonth());
 	
 	// browse transactions
 	foreach (var transaction in statement.TransactionList.Transactions)
@@ -48,25 +48,25 @@ Once you have your token and client installed, you can use SDK and get informati
 
 #### Example - Choose period
 
-	var statement = explorer.Periods(TransactionFilter.LastDay());
-	var statement = explorer.Periods(TransactionFilter.LastMonth());
+	var statement = client.Periods(TransactionFilter.LastDay());
+	var statement = client.Periods(TransactionFilter.LastMonth());
 
 #### Example - Choose exact period
-	var statement = explorer.Periods(TransactionFilter.LastDays(14));
-	var statement = explorer.Periods(TransactionFilter.LastWeeks(8));
+	var statement = client.Periods(TransactionFilter.LastDays(14));
+	var statement = client.Periods(TransactionFilter.LastWeeks(8));
 
 #### Example - Get data in specific format
 
-    string html = explorer.Periods(TransactionFilter.LastDays(10), Format.Html);
-    string xml = explorer.Periods(TransactionFilter.LastDays(10), Format.Xml);
-    string csv = explorer.Periods(TransactionFilter.LastDays(10), Format.Csv);
+    string html = client.Periods(TransactionFilter.LastDays(10), Format.Html);
+    string xml = client.Periods(TransactionFilter.LastDays(10), Format.Xml);
+    string csv = client.Periods(TransactionFilter.LastDays(10), Format.Csv);
 
 #### Example - Get new transactions from last download
-	var statement = explorer.Last();
+	var statement = client.Last();
 
 You can change last download date also:
 
-	explorer.SetLastDownloadDate(DateTime.UtcNow.AddMonths(-1));
+	client.SetLastDownloadDate(DateTime.UtcNow.AddMonths(-1));
 
 ## Supported frameworks
 
@@ -80,11 +80,12 @@ You can change last download date also:
 
 Version 3.0.0. contains important breaking changes. Due to using System.Text.Json library target framework has been changed to NET Standard 2.0.
 
+- changed ApiExplorer to IFioClient (and FioClient implementation)
 - all methods support async calls only
 - cancellation tokens support
-- changed target framework to .NET Standard 2.0
-- implemented System.Text.Json instead of Newtonsoft.Json
-- possibility to pass own HttpClient to ApiExplorer
+- changed target framework to .NET Standard 2.1
+- implemented System.Text.Json with internal serializer config
+- possibility to pass own HttpClient to FioClient
 - common code cleanup
 
 #### Version 2.1.0
