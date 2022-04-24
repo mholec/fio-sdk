@@ -10,7 +10,7 @@
         <Authors>Miroslav Holec</Authors>
         <Title>FIO Banka Client</Title>
         <Nullable>disable</Nullable>
-        <PackageIcon>https://cdn.miroslavholec.cz/nuget/fio-sdk-3.png</PackageIcon>
+        <PackageIcon>fio-sdk-3.png</PackageIcon>
         <PackageReadmeFile>readme.md</PackageReadmeFile>
         <PackageTags>fio, sdk, api, banka</PackageTags>
         <RepositoryUrl>https://github.com/mholec/fio-sdk-csharp</RepositoryUrl>
@@ -24,5 +24,8 @@
             <Pack>true</Pack>
             <PackagePath>\</PackagePath>
         </None>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="fio-sdk-3.png" Pack="true" PackagePath=""/>
     </ItemGroup>
 </Project>
