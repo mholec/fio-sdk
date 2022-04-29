@@ -27,15 +27,15 @@ Once you have your token and client installed, you can use SDK and get informati
 
 	// create FioClient directly
 	using(HttpClient httpClient = new HttpClient())
-    {
-       IFioClient simpleClient = FioClient.Create(httpClient, new FioClientConfiguration()
-       {
-          AuthToken = "AUTH_TOKEN"
-       });
-    }
-
-    // OR create FioClient using MSDI
-    services.AddFioClient("AUTH_TOKEN");
+	{
+	   IFioClient simpleClient = FioClient.Create(httpClient, new FioClientConfiguration()
+	   {
+	      AuthToken = "AUTH_TOKEN"
+	   });
+	}
+	
+	// OR create FioClient using MSDI
+	services.AddFioClient("AUTH_TOKEN");
 	
 	// get account statement
 	AccountStatement statement = client.Periods(TransactionFilter.LastMonth());
@@ -83,7 +83,6 @@ Version 3.0.0. contains important breaking changes. Due to using System.Text.Jso
 - changed ApiExplorer to IFioClient (and FioClient implementation)
 - all methods support async calls only
 - cancellation tokens support
-- changed target framework to .NET Standard 2.1
 - implemented System.Text.Json with internal serializer config
 - possibility to pass own HttpClient to FioClient
 - common code cleanup

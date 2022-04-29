@@ -48,13 +48,12 @@ namespace FioSdkCsharp
 
             RootObject result;
 
-            await using (var data = await GetAsync(url, ctx))
+            using (var data = await GetAsync(url, ctx))
             {
                 result = await JsonSerializer.DeserializeAsync<RootObject>(data, _jsonSerializerOptions, ctx).ConfigureAwait(false);
-                await data.DisposeAsync();
             }
 
-            return result!.AccountStatement;
+            return result.AccountStatement;
         }
 
         /// <summary>
@@ -66,13 +65,12 @@ namespace FioSdkCsharp
 
             RootObject result;
 
-            await using (var data = await GetAsync(url, ctx))
+            using (var data = await GetAsync(url, ctx))
             {
                 result = await JsonSerializer.DeserializeAsync<RootObject>(data, _jsonSerializerOptions, ctx).ConfigureAwait(false);
-                await data.DisposeAsync();
             }
 
-            return result!.AccountStatement;
+            return result.AccountStatement;
         }
 
         /// <summary>

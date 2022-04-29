@@ -1,15 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>FioSdk</PackageId>
-        <Version>3.0.0</Version>
+        <Version>3.0.1</Version>
         <Description>FIO Banka Client</Description>
         <Copyright>© 2016 - 2022</Copyright>
         <Language>en-US</Language>
         <Authors>Miroslav Holec</Authors>
         <Title>FIO Banka Client</Title>
         <Nullable>disable</Nullable>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageIcon>fio-sdk-3.png</PackageIcon>
         <PackageReadmeFile>readme.md</PackageReadmeFile>
         <PackageTags>fio, sdk, api, banka</PackageTags>
@@ -17,7 +18,7 @@
         <RepositoryType>git</RepositoryType>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="System.Text.Json" Version="6.0.2" />
+        <PackageReference Include="System.Text.Json" Version="6.0.0" />
     </ItemGroup>
     <ItemGroup>
         <None Include="readme.md">

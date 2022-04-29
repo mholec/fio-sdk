@@ -19,49 +19,81 @@ namespace FioSdkCsharp
 
 	    public static TransactionFilter LastDay(DateTime? now = null)
         {
-            now ??= DateTime.UtcNow;
+            if (now == null)
+            {
+                now = DateTime.UtcNow;
+            }
+
             return new TransactionFilter(now.Value.AddDays(-1), now.Value);
         }
 
         public static TransactionFilter LastWeek(DateTime? now = null)
         {
-            now ??= DateTime.UtcNow;
+            if (now == null)
+            {
+                now = DateTime.UtcNow;
+            }
+
             return new TransactionFilter(now.Value.AddDays(-7), now.Value);
         }
 
         public static TransactionFilter LastMonth(DateTime? now = null)
         {
-            now ??= DateTime.UtcNow;
+            if (now == null)
+            {
+                now = DateTime.UtcNow;
+            }
+
             return new TransactionFilter(now.Value.AddMonths(-1), now.Value);
         }
 
         public static TransactionFilter LastYear(DateTime? now = null)
         {
-            now ??= DateTime.UtcNow;
+            if (now == null)
+            {
+                now = DateTime.UtcNow;
+            }
+
             return new TransactionFilter(now.Value.AddYears(-1), now.Value);
         }
 
         public static TransactionFilter LastDays(int days, DateTime? now = null)
         {
-            now ??= DateTime.UtcNow;
+            if (now == null)
+            {
+                now = DateTime.UtcNow;
+            }
+
             return new TransactionFilter(now.Value.AddDays(-1 * days), now.Value);
         }
 
         public static TransactionFilter LastWeeks(int weeks, DateTime? now = null)
         {
-            now ??= DateTime.UtcNow;
+            if (now == null)
+            {
+                now = DateTime.UtcNow;
+            }
+
             return new TransactionFilter(now.Value.AddDays(-1 * 7 * weeks), now.Value);
         }
 
         public static TransactionFilter LastMonths(int months, DateTime? now = null)
         {
-            now ??= DateTime.UtcNow;
+            if (now == null)
+            {
+                now = DateTime.UtcNow;
+            }
+
             return new TransactionFilter(now.Value.AddMonths(-1 * months), now.Value);
         }
 
         public static TransactionFilter LastYears(int years, DateTime? now = null)
         {
-            now ??= DateTime.UtcNow;
+            if (now == null)
+            {
+                now = DateTime.UtcNow;
+            }
+
             return new TransactionFilter(now.Value.AddYears(-1 * years), now.Value);
         }
     }
