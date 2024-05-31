@@ -3,7 +3,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>FioSdk.Extensions.DependencyInjection</PackageId>
-        <Version>1.0.1</Version>
+        <Version>1.1.0</Version>
         <Description>FIO Banka Client - DI Extensions</Description>
         <Copyright>© 2021 - 2022</Copyright>
         <Language>en-US</Language>
@@ -23,11 +23,11 @@
     </ItemGroup>
     
     <ItemGroup>
-      <ProjectReference Include="..\FioSdkCsharp\FioSdkCsharp.csproj" />
+        <None Include="fio-sdk-3.png" Pack="true" PackagePath="" />
     </ItemGroup>
     
     <ItemGroup>
-        <None Include="fio-sdk-3.png" Pack="true" PackagePath=""/>
+      <ProjectReference Include="..\FioSdkCsharp\FioSdkCsharp.csproj" />
     </ItemGroup>
 
 </Project>

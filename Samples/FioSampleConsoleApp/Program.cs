@@ -14,7 +14,7 @@ namespace FioSampleConsoleApp
         {
             // with DI support
             IServiceCollection services = new ServiceCollection();
-            services.AddFioClient("AUTH_TOKEN");
+            services.AddFioClient("API_TOKEN");
             var provider = services.BuildServiceProvider();
             var client = provider.GetRequiredService<IFioClient>();
 
@@ -23,7 +23,7 @@ namespace FioSampleConsoleApp
             {
                 IFioClient simpleClient = FioClient.Create(httpClient, new FioClientConfiguration()
                 {
-                    AuthToken = "AUTH_TOKEN"
+                    AuthToken = "API_TOKEN"
                 });
             }
 

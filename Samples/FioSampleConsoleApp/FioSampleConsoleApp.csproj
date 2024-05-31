@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Src\FioSdkCsharp.Extensions.DependencyInjection\FioSdkCsharp.Extensions.DependencyInjection.csproj" />
+    <ProjectReference Include="..\..\Src\FioSdkCsharp\FioSdkCsharp.csproj" />
   </ItemGroup>
 
   <ItemGroup>

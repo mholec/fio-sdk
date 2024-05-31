@@ -3,7 +3,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>FioSdk</PackageId>
-        <Version>3.0.1</Version>
+        <Version>3.1.0</Version>
         <Description>FIO Banka Client</Description>
         <Copyright>© 2016 - 2022</Copyright>
         <Language>en-US</Language>
@@ -12,21 +12,15 @@
         <Nullable>disable</Nullable>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageIcon>fio-sdk-3.png</PackageIcon>
-        <PackageReadmeFile>readme.md</PackageReadmeFile>
         <PackageTags>fio, sdk, api, banka</PackageTags>
         <RepositoryUrl>https://github.com/mholec/fio-sdk-csharp</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
+        <UserSecretsId>5386b740-21c6-4658-a8ed-e10dda6834da</UserSecretsId>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="System.Text.Json" Version="6.0.0" />
     </ItemGroup>
     <ItemGroup>
-        <None Include="readme.md">
-            <Pack>true</Pack>
-            <PackagePath>\</PackagePath>
-        </None>
-    </ItemGroup>
-    <ItemGroup>
-        <None Include="fio-sdk-3.png" Pack="true" PackagePath=""/>
+        <None Include="fio-sdk-3.png" Pack="true" PackagePath="" />
     </ItemGroup>
 </Project>
