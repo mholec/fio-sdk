@@ -76,9 +76,13 @@ You can change last download date also:
 
 ## Changelist
 
+#### Version 3.1.0
+
+Version 3.1.0 contains new FIO base URL.
+
 #### Version 3.0.0
 
-Version 3.0.0. contains important breaking changes. Due to using System.Text.Json library target framework has been changed to NET Standard 2.0.
+Version 3.0.0 contains important breaking changes. Due to using System.Text.Json library target framework has been changed to NET Standard 2.0.
 
 - changed ApiExplorer to IFioClient (and FioClient implementation)
 - all methods support async calls only
